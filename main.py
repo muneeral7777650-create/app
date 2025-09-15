@@ -79,8 +79,8 @@ if uploaded_file is not None:
     st.table(probs_df)
 
 # --- ملاحظات وفوتر ---
-st.markdown(
-    "<hr style='border:1px solid gray'>"
-    "<p style='text-align:center; font-weight:bold;'> تم التطوير من قبل م. منير البحيري ،  م.المعتصم بالله الزنم ،   م.احمد العبسي </p>",
-    unsafe_allow_html=True
-)
+# st.markdown(
+#     "<hr style='border:1px solid gray'>"
+#     "<p style='text-align:center; font-weight:bold;'> تم التطوير من قبل م. منير البحيري ،  م.المعتصم بالله الزنم ،   م.احمد العبسي </p>",
+#     unsafe_allow_html=True
+# )
