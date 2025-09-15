@@ -81,6 +81,6 @@ if uploaded_file is not None:
 # --- ملاحظات وفوتر ---
 st.markdown(
     "<hr style='border:1px solid gray'>"
-    "<p style='text-align:center; font-weight:bold;'>تم التطوير من قبل م. منير البحيري</p>",
+    "<p style='text-align:center; font-weight:bold;'> تم التطوير من قبل م. منير البحيري ، المعتصم بالله الزنم ، احمد العبسي </p>",
     unsafe_allow_html=True
 )
