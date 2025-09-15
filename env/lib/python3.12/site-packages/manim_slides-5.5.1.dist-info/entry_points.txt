@@ -1,0 +1,2 @@
+[console_scripts]
+manim-slides = manim_slides.__main__:cli
