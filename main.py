@@ -77,7 +77,7 @@ if uploaded_file is not None:
     })
     st.table(probs_df)
 
---- فوتر منسّق ---
+# --- فوتر منسّق ---
 st.markdown(
     """
     <hr style='border:1px solid gray; margin-top:40px; margin-bottom:10px;'>
