@@ -1,12 +1,11 @@
 import streamlit as st
-import tensorflow as tf
+import os
+import time
+import numpy as np
+import pandas as pd
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
-import numpy as np
 from PIL import Image
-import time
-import pandas as pd
-import os
 
 st.set_page_config(page_title="Chest X-ray Pneumonia Detection", layout="centered")
 
@@ -67,9 +66,9 @@ if uploaded_file is not None:
     # --- عرض النتائج ---
     st.subheader("🔍 النتيجة:")
     if prediction > 0.5:
-        st.error(f"📌 الحالة: Pneumonia (التهاب رئوي) \n\n 🔴 احتمال الالتهاب: {pneumonia_prob:.2f}%")
+        st.error(f"📌 الحالة: Pneumonia (التهاب رئوي)\n\n🔴 احتمال الالتهاب: {pneumonia_prob:.2f}%")
     else:
-        st.success(f"📌 الحالة: Normal (طبيعي) \n\n 🟢 احتمال الطبيعي: {normal_prob:.2f}%")
+        st.success(f"📌 الحالة: Normal (طبيعي)\n\n🟢 احتمال الطبيعي: {normal_prob:.2f}%")
 
     # --- جدول الاحتمالات ---
     probs_df = pd.DataFrame({
@@ -78,9 +77,14 @@ if uploaded_file is not None:
     })
     st.table(probs_df)
 
---- ملاحظات وفوتر ---
-st.markdown(
-    "<hr style='border:1px solid gray'>"
-    "<p style='text-align:center; font-weight:bold;'> تم التطوير من قبل م. منير البحيري ، </p>",
-    unsafe_allow_html=True
-)
+# --- فوتر منسّق ---
+# st.markdown(
+#     """
+#     <hr style='border:1px solid gray; margin-top:40px; margin-bottom:10px;'>
+#     <p style='text-align:center; font-weight:bold;'>
+#         تم التطوير بواسطة <span style='color:#2E86C1;'>م. منير البحيري</span> 🔬<br>
+#         © جميع الحقوق محفوظة 2025
+#     </p>
+#     """,
+#     unsafe_allow_html=True
+# )
