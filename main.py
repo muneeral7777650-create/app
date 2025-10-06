@@ -78,13 +78,13 @@ if uploaded_file is not None:
     st.table(probs_df)
 
 # --- فوتر منسّق ---
-st.markdown(
-    """
-    <hr style='border:1px solid gray; margin-top:40px; margin-bottom:10px;'>
-    <p style='text-align:center; font-weight:bold;'>
-        تم التطوير بواسطة <span style='color:#2E86C1;'>م. منير البحيري </span> 🔬<br>
-        © جميع الحقوق محفوظة 2025
-    </p>
-    """,
-    unsafe_allow_html=True
-)
+# st.markdown(
+#     """
+#     <hr style='border:1px solid gray; margin-top:40px; margin-bottom:10px;'>
+#     <p style='text-align:center; font-weight:bold;'>
+#         تم التطوير بواسطة <span style='color:#2E86C1;'>م. منير البحيري </span> 🔬<br>
+#         © جميع الحقوق محفوظة 2025
+#     </p>
+#     """,
+#     unsafe_allow_html=True
+# )
